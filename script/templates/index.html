@@ -3,27 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fake News Detection</title>
+    <title>Fake News Classification</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
   </head>
   <body>
-    <div class="container">
-      <h1>Fake News Detection</h1>
-      <form id="news-form">
-        <textarea
+    <div class="chat-container">
+      <div class="chat-header">
+        <img
+          src="{{ url_for('static', filename='images/bot.png') }}"
+          alt="bot-avatar"
+          class="avatar"
+        />
+        <div class="header-text">
+          <p>Fake News Bot</p>
+          <span>Ask me if the news is real or fake</span>
+        </div>
+      </div>
+      <div id="chat-box" class="chat-box"></div>
+      <form id="news-form" class="message-form">
+        <input
           id="news-text"
           name="news"
-          placeholder="Enter the news text here..."
-        ></textarea>
-        <button type="submit">Check</button>
+          type="text"
+          placeholder="Enter the news text ..."
+        />
+        <button type="submit">Send</button>
         <button id="reset-button" type="button" style="display: none">
           Reset
         </button>
       </form>
-      <div id="result" class="result" style="display: none"></div>
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
