@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify, render_template
-from app.utils import load_model, wordopt, LABEL
+from app.utils import load_model, preprocess_text, LABEL
 
 main = Blueprint('main', __name__)
 
@@ -15,7 +15,7 @@ def predict():
   if not news_text:
     return jsonify({"error": "No news text provided"}), 400
 
-  processed_text = wordopt(news_text)
+  processed_text = preprocess_text(news_text)
   test_vector = vectorizer.transform([processed_text])
   prediction = model.predict(test_vector)
   result = LABEL[prediction[0]]

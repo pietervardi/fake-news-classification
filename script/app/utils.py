@@ -15,7 +15,7 @@ def load_model():
   return model, vectorizer
 
 # Preprocess the input text
-def wordopt(text):
+def preprocess_text(text):
   text = text.lower()
   text = re.sub(r'\[.*?\]', '', text)
   text = re.sub(r"\\W", " ", text)
