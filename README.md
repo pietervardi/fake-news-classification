@@ -1,6 +1,11 @@
 # Fake News Classification App
 
-[Google Colab](https://colab.research.google.com/drive/1Gt2SKxjvR4JWvLzF8C-SkARU_jape9A-?usp=sharing) 
+## Important Link
+[OneDrive](https://mikroskilacid-my.sharepoint.com/:f:/g/personal/211112219_students_mikroskil_ac_id/Erfo64CzOW9OnvrmkMeQWVkBZv-O3iYBl-qfyIo0YQrJug?e=YaKu0l)
+
+[Presentation Video](https://mikroskilacid-my.sharepoint.com/:v:/g/personal/211112219_students_mikroskil_ac_id/ETmJkovU3_VPiA4LWEywEpIBBg8eNObCyIySjNB8DLezDw?e=qYKqh0)
+
+[Google Colab](https://colab.research.google.com/drive/1Gt2SKxjvR4JWvLzF8C-SkARU_jape9A-?usp=sharing)
 
 ## Configuration
 
