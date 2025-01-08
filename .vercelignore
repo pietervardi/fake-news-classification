@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+*.ipynb
+*.pkl
+*.h5
+dataset/
+*.log
+*.gz
+*.tar.gz
+*.zip
+Fake_News_Classification.ipynb
+news.txt
+Dockerfile
+docker-compose.yml
